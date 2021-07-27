@@ -1,0 +1,12 @@
+#ifndef WEBSOCKETLIB_GLOBAL_H
+#define WEBSOCKETLIB_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(WEBSOCKETLIB_LIBRARY)
+#  define WEBSOCKETLIB_EXPORT Q_DECL_EXPORT
+#else
+#  define WEBSOCKETLIB_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // WEBSOCKETLIB_GLOBAL_H
